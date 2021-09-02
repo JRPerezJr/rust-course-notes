@@ -13,7 +13,7 @@
 
 <br>
 
-> Chef coursework.
+> Rust coursework.
 
 ## 📓 Author
 
