@@ -1,5 +1,5 @@
 #[derive(Debug)]
-enum Makes {
+enum Make {
     BMW,
     AUDI,
     VW,
@@ -15,7 +15,7 @@ enum Model {
 struct Vehicle {
     stk_num: i32,
     year: i32,
-    make: Makes,
+    make: Make,
     model: Model,
 }
 
@@ -36,19 +36,19 @@ fn main() {
     let stock1 = Vehicle {
         stk_num: 1000,
         year: 2020,
-        make: Makes::BMW,
+        make: Make::BMW,
         model: Model::M8,
     };
     let stock2 = Vehicle {
         stk_num: 1001,
         year: 2021,
-        make: Makes::AUDI,
+        make: Make::AUDI,
         model: Model::A8,
     };
     let stock3 = Vehicle {
         stk_num: 1003,
         year: 2022,
-        make: Makes::VW,
+        make: Make::VW,
         model: Model::Passat,
     };
     println!("Current stock data:");
