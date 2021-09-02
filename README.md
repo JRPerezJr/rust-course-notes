@@ -24,5 +24,4 @@
 
 ## 📝 License
 
-Copyright © 2021 [Juan Perez Jr.](https://github.com/JRPerezJr).<br />
-This project is [MIT](https://github.com/JRPerezJr/rust-course-notes/blob/main/LICENSE) licensed.
+Copyright © 2021 [Juan Perez Jr.](https://github.com/JRPerezJr).
