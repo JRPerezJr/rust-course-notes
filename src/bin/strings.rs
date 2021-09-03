@@ -9,6 +9,15 @@ struct LineItem {
     name: String,
     count: i32,
 }
+fn print_name(name: &str) {
+    println!("name: {:?}", name);
+}
+fn print_password(password: &str) {
+    println!("password: {:?}", password);
+}
+fn print_email(email: &str) {
+    println!("email: {:?}", email);
+}
 
 fn print_it(data: &str) {
     println!("{:?}", data);
@@ -34,6 +43,8 @@ fn main() {
         "User data:\n First Name: {:?}\n Last Name: {:?}\n",
         user_data.first_name, user_data.last_name
     );
+    print_password(&user_data.password);
+    print_email(&user_data.email);
 
     let receipt = vec![
         LineItem {
@@ -47,6 +58,7 @@ fn main() {
     ];
     println!("Receipt Data:");
     for item in receipt {
-        println!("name: {:?}, count: {:?}", item.name, item.count);
+        print_name(&item.name);
+        println!("count: {:?}", item.count);
     }
 }
